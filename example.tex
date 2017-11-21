@@ -1,0 +1,142 @@
+\documentclass[aspectratio=169]{beamer}
+
+
+\usetheme[compress]{MSU}
+
+\author[J.~Smith]{John Smith}
+\date[2015-10-21]{October 21, 2015}
+\title[Short Title]{\Huge Full Title \\ Optionally with Line Break}
+\institute{Michigan State University}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\section{Overview}
+\subsection{}
+
+\begin{frame}
+  {Outline}
+  \begin{itemize}
+    \item Simple itemized list
+    \item Second item
+      \begin{itemize}
+        \item Nested item 1
+        \item Nested item 2
+          \begin{itemize}
+            \item Nested nested item 1
+            \item Nested nested item 2
+          \end{itemize}
+      \end{itemize}
+    \item Third top-level item
+  \end{itemize}
+  \vspace{1em}
+  See accompanying README.txt for more information.
+\end{frame}
+
+\section{Sections}
+\subsection{Something}
+
+\begin{frame}
+  {Some of something}
+  \begin{itemize}
+    \item Note how specifying sections and subsections works
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {More of something}
+\end{frame}
+
+\subsection{Something else}
+
+\begin{frame}
+  {Some of something else}
+\end{frame}
+
+\begin{frame}
+  {More of something else}
+\end{frame}
+
+\section{Columns}
+\subsection{}
+
+\begin{frame}
+  {Two column example}
+  \begin{columns}
+    \column{.4\textwidth}
+    \includegraphics[width=\textwidth]{Spartan-helmet.jpg}
+    \column{.6\textwidth}
+    \begin{itemize}
+      \item Columns are a great way to show graphics
+      \item Another random note: empty $\backslash$subsection\{\} gives
+        navigation dots without potentially excessive subsection titles
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  {Three column example}
+  \begin{columns}[T]
+    \column{.33\textwidth}
+    \includegraphics[width=\textwidth]{Spartan-helmet.jpg}
+    \column{.33\textwidth}
+    \includegraphics[width=\textwidth]{Spartan-helmet.jpg}
+    \column{.33\textwidth}
+    \begin{itemize}
+      \item Three columns
+      \item It works the same way
+      \item You can use [t] or [T] to get top-aligned frames or columns
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\section{Outlook}
+\subsection{}
+
+\begin{frame}
+  {Outlook}
+  \begin{itemize}
+    \item We make a point
+    \item \ldots and another
+    \item \ldots and maybe a third
+  \end{itemize}
+  \vspace{2em}
+  \begin{block}{Until finally}
+    \centering
+    We drop the mic with a block environment.
+  \end{block}
+\end{frame}
+
+\backupbegin
+
+\begin{frame}
+  {}
+  \begin{center}
+    \Huge Backup Slides
+  \end{center}
+\end{frame}
+
+\subsection{}
+
+\begin{frame}
+  {Backup 1}
+  \begin{itemize}
+    \item Backup slides go here
+    \item By using $\backslash$backupbegin and $\backslash$end, we
+      automatically get sane backup slide numbering
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  {Backup 2}
+  \begin{itemize}
+    \item More backup is usually better
+    \item Just make sure the content is basically correct
+  \end{itemize}
+\end{frame}
+
+\backupend
+\end{document}
